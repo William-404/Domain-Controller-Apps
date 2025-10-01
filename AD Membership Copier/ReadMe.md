@@ -1,14 +1,14 @@
 ## What it does
-Copies direct group memberships only (security + distribution).
-Excludes primary group (e.g., Domain Users).
-Adds missing groups to the target user without removing anything from either user.
+* Copies direct group memberships only (security + distribution).
+* Excludes primary group (e.g., Domain Users).
+* Adds missing groups to the target user without removing anything from either user.
 
 ## How it works:
-Resolves users via sAMAccountName, UPN, DN, or partial first/last name using ANR.
-Displays an inline dropdown for multiple name matches.
-Reads direct group memberships with an LDAP member= query.
-Uses Add-ADGroupMember on the PDC Emulator DC for consistency.
-Requires an account with rights to add members to the relevant groups.
+- Resolves users via sAMAccountName, UPN, DN, or partial first/last name using ANR.
+- Displays an inline dropdown for multiple name matches.
+- Reads direct group memberships with an LDAP member= query.
+- Uses Add-ADGroupMember on the PDC Emulator DC for consistency.
+- Requires an account with rights to add members to the relevant groups.
 
 
 ## Quick Start
