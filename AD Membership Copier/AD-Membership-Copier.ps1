@@ -1,4 +1,4 @@
-﻿<#
+﻿<<#
 AD Membership Copier (GUI)
 - Self-elevates to Admin and ensures STA for WinForms.
 - Accepts sAMAccountName, UPN, CN, DN, or partial name (first or last).
